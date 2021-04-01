@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>HERE ARE THOSE DANK MEMES</h1>
+<h2>ADD YOUR OWN DANK MEME</h2>
+<form action="/" method="POST">
+<input type="text" name="meme">
+<button type="submit">ADD MEME</button>
+</form>
+
+<% memes.forEach((meme, idx) => { %>
+  <div class="flexVert">
+    <img src="<%= meme %>" alt="sorry bruh">
+    <form action="/<%= idx %>?_method=DELETE" method="POST">
+      <button type="submit">X</button>
+    </form>
+  </div>
+<% }) %> 
+
+  </body>
+</html>

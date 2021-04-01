@@ -1,0 +1,11 @@
+body, .flexVert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 50vw;
+  background-position: center;
+  background-size: contain;
+}
